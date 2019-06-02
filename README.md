@@ -1,6 +1,6 @@
 # GraphQL rules
 
-- [По-русски (источник)](./ru)
+- [По-русски (источник)](./docs)
 - [In English (help wanted for translation)](./en)
 
-Translation may be suggested via [crowdin.com](https://crowdin.com/project/graphql-rules-ru)
+## Translations for current rules may be provided via [crowdin.com](https://crowdin.com/project/graphql-rules-ru) services.
