@@ -4,9 +4,9 @@ GraphQL uses regexp `/[_A-Za-z][_0-9A-Za-z]*/` to validate property and type nam
 
 Which name convention is better to use?
 
-Абстрактно можно обратиться к исследованию [Eye Tracking'а](http://www.cs.kent.edu/~jmaletic/papers/ICPC2010-CamelCaseUnderScoreClouds.pdf) по `camelCase` и `under_score`. В этом исследовании явного фаворита не выявлено.
+We could refer to [Eye Tracking'а](http://www.cs.kent.edu/~jmaletic/papers/ICPC2010-CamelCaseUnderScoreClouds.pdf) research, that tried to analyze `camelCase` and `under_score`. But that research didn't find any favourites.
 
-Коль исследования особо не помогло. Давайте будем разбираться в каждом конкретном случае.
+For the current moment, we don't have any whitepapers to suggest something scientifically. But we want to give the following advice.
 
 - **1. Naming rules** 
   - [1.1.](./1.1-fields-args.md) Используйте `camelCase` для именования GraphQL-полей и аргументов.
