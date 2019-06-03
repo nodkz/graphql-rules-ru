@@ -2,7 +2,7 @@
 
 # Дизайн GraphQL-схем — делаем АПИ удобным, предотвращаем боль и страдания
 
-Рекомендации и правила озвученные в этой статье были выработаны за 3 года использования GraphQL как на стороне сервера (при построении схем) так и на клиентской стороне (написания GraphQL-запросов и покрытием клиентского кода статическим анализом). Также в этой статье используются рекомендации и опыт Caleb Meredith (автора PostGraphQL, ex-сотрудник Facebook) и инженеров Shopify.
+Rules and recommendations mentioned in this paper were results of 3-years experience of using GraphQL both on front-end and back-end side. Also, we use recommendations and experience of Caleb Meredith (PostGraphQL author, Facebook ex-employee) and Shopify engineers.
 
 Эта статья может поменяться в будущем, т.к. текущие правила носят рекомендательный характер и могут со временем улучшиться, измениться или вовсе стать антипаттерном. Но то что здесь написано, выстрадано временем и болью от использования кривых GraphQL-схем.
 
@@ -14,7 +14,7 @@
   - [1.1.](./01-naming/1.1-fields-args.md) Используйте `camelCase` для именования GraphQL-полей и аргументов.
   - [1.2.](./01-naming/1.2-types.md) Используйте `UpperCamelCase` для именования GraphQL-типов.
   - [1.3.](./01-naming/1.3-enum.md) Используйте `CAPITALIZED_WITH_UNDERSCORES` для именования значений ENUM-типов.
-- **2. Правила типов** 
+- **2. Type rules** 
   - [2.1.](./02-types/2.1-custom-scalars.md) Используйте кастомные скалярные типы, если вы хотите объявить поля или аргументы с определенным семантическим значением.
   - [2.2.](./02-types/2.2-enumerable.md) Используйте Enum для полей, которые содержат определенный набор значений.
 - **3. Правила полей (Output)** 
