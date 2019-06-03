@@ -10,7 +10,7 @@
 
 ## TL;DR всех правил
 
-- **1. Правила именования** 
+- **1. Naming rules** 
   - [1.1.](./01-naming/1.1-fields-args.md) Используйте `camelCase` для именования GraphQL-полей и аргументов.
   - [1.2.](./01-naming/1.2-types.md) Используйте `UpperCamelCase` для именования GraphQL-типов.
   - [1.3.](./01-naming/1.3-enum.md) Используйте `CAPITALIZED_WITH_UNDERSCORES` для именования значений ENUM-типов.
@@ -31,7 +31,7 @@
   - [5.3.](./05-list/5.3-limit-skip.md) Для ограничения возвращаемых элементов в списке используйте аргументы `limit` со значением по умолчанию и `skip`.
   - [5.4.](./05-list/5.4-pagination.md) Для пагинации используйте аргументы `page`, `perPage` и возвращайте output-тип с полями `items` с массивом элементов и `pageInfo` с метаданными для удобной отрисовки страниц на клиенте.
   - [5.5.](./05-list/5.5-cursor-connection.md) Для бесконечных списков (infinite scroll) используйте [Relay Cursor Connections Specification](https://facebook.github.io/relay/graphql/connections.htm).
-- **6. Правила Мутаций** 
+- **6. Mutation rules** 
   - [6.1.](./06-mutations/6.1-mutation-namespaces.md) Используйте Namespace-типы для группировки мутаций в рамках одного ресурса!
   - [6.2.](./06-mutations/6.2-business-operations.md) Выходите за рамки CRUD – cоздавайте небольшие мутации для разных бизнес операций над ресурсами.
   - [6.3.](./06-mutations/6.3-batch-changes.md) Рассмотрите возможность выполнения мутаций сразу над несколькими элементами (однотипные batch-изменения).
@@ -44,7 +44,7 @@
     - [6.6.4.](./06-mutations/6.6.4-payload-errors.md) В ответе мутации возвращайте поле `errors` с типизированными пользовательскими ошибками.
 - **7. Правила связей между типами (relationships)** 
   - [7.1.](./07-relations/7.1-hairy-graphql.md) GraphQL-схема должна быть "волосатой"
-- **10. Прочие правила** 
-  - [10.1.](./10-misc/10.1-docs-markdown.md) Для документации используйте markdown
+- **10. Other rules** 
+  - [10.1.](./10-misc/10.1-docs-markdown.md) Use markdown for documentation
 - **A. Appendix** 
-  - [A-1](./a-appendix/#A-1) Полезные ссылки
+  - [A-1](./a-appendix/#A-1) Useful links
