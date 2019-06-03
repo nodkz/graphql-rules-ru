@@ -1,8 +1,8 @@
 ## 3. Fields Rules (Output)
 
-In GraphQL, fields are used to describe shape of data that will be transferred from the server to the client. Они могут быть описаны обычными скалярнвми типами, а также сложными структурами – Output-типами (GraphQLObjectType).
+In GraphQL, fields are used to describe shape of data that will be transferred from the server to the client. They may be described as scalar types as well as complex structures - Object type (GraphQLObjectType).
 
 - **3. Fields Rules (Output)** 
   - [3.1.](./3.1-semantic-names.md) Use semantic names for fields and avoid leaking of implementation details in fields names.
-  - [3.2.](./3.2-non-null-output.md) Делайте поля обязательными `NonNull`, если данные в поле возвращаются при любой ситуации.
+  - [3.2.](./3.2-non-null-output.md) Use `Non-Null` field if field will always have a given field value.
   - [3.3.](./3.3-grouping.md) Group as many related fields into custom Object type as possible.
