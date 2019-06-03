@@ -1,6 +1,6 @@
 ## 3. Fields Rules (Output)
 
-В GraphQL поля используются для передачи данных с сервера на клиент. Они могут быть описаны обычными скалярнвми типами, а также сложными структурами – Output-типами (GraphQLObjectType).
+In GraphQL, fields are used to describe shape of data that will be transferred from the server to the client. Они могут быть описаны обычными скалярнвми типами, а также сложными структурами – Output-типами (GraphQLObjectType).
 
 - **3. Fields Rules (Output)** 
   - [3.1.](./3.1-semantic-names.md) Use semantic names for fields and avoid leaking of implementation details in fields names.
