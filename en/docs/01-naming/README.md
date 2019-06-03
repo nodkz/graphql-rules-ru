@@ -1,6 +1,6 @@
 ## 1. Naming rules
 
-GraphQL uses regexp `/[_A-Za-z][_0-9A-Za-z]*/` to validate property and type names. Согласно нее можно использовать `camelCase`, `under_score`, `UpperCamelCase`, `CAPITALIZED_WITH_UNDERSCORES`. Слава богу `kebab-case` ни в каком виде не поддерживается.
+GraphQL uses regexp `/[_A-Za-z][_0-9A-Za-z]*/` to validate property and type names. That means you can use `camelCase`, `under_score`, `UpperCamelCase`, `CAPITALIZED_WITH_UNDERSCORES`. Pay attention that `kebab-case` is not supported at all.
 
 Which name convention is better to use?
 
