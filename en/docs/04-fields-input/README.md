@@ -1,6 +1,6 @@
-## 4. Правила аргументов
+## 4. Argument rules
 
-- **4. Правила аргументов (Input)** 
-  - [4.1.](./4.1-grouping-input.md) Группируйте взаимосвязанные аргументы вместе в новый input-тип.
-  - [4.2.](./4.2-custom-scalar-for-input.md) Используйте строгие скалярные типы для аргументов, например `DateTime` вместо `String`.
-  - [4.3.](./4.3-non-null-input.md) Помечайте аргументы как `NonNull`, если они обязательны для выполнения запроса.
+- **4. Argument rules (Input)** 
+  - [4.1.](./4.1-grouping-input.md) Group coupled arguments to the new input-type.
+  - [4.2.](./4.2-custom-scalar-for-input.md) Use strict scalar types for arguments, eg. `DateTime` instead of `String`.
+  - [4.3.](./4.3-non-null-input.md) Mark arguments as `required`, is they are required for query execution.
