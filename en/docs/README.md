@@ -4,7 +4,7 @@
 
 Rules and recommendations mentioned in this paper were results of 3-years experience of using GraphQL both on front-end and back-end side. Also, we use recommendations and experience of Caleb Meredith (PostGraphQL author, Facebook ex-employee) and Shopify engineers.
 
-Эта статья может поменяться в будущем, т.к. текущие правила носят рекомендательный характер и могут со временем улучшиться, измениться или вовсе стать антипаттерном. Но то что здесь написано, выстрадано временем и болью от использования кривых GraphQL-схем.
+This article could be changed in the future, cause current rules are advisory and may be improved, changed, or even become antipattern. Но то что здесь написано, выстрадано временем и болью от использования кривых GraphQL-схем.
 
 **Если вы считаете, что какое-либо правило полная лажа или оно не полностью раскрыто, или хотите добавить свое – пожалуйста откройте issue или стукните меня в телеграмме по нику @nodkz.** Ошибки и опечатки можно поправить, нажав на карандашик в правом верхнем углу. Я только начал формировать правила, но довести дело до конца и привести всё божеский вид – мы сможем только вместе.
 
@@ -17,11 +17,11 @@ Rules and recommendations mentioned in this paper were results of 3-years experi
 - **2. Type rules** 
   - [2.1.](./02-types/2.1-custom-scalars.md) Используйте кастомные скалярные типы, если вы хотите объявить поля или аргументы с определенным семантическим значением.
   - [2.2.](./02-types/2.2-enumerable.md) Используйте Enum для полей, которые содержат определенный набор значений.
-- **3. Правила полей (Output)** 
+- **3. Fields Rules (Output)** 
   - [3.1.](./03-fields-output/3.1-semantic-names.md) Давайте полям понятные смысловые имена, а не то как они реализованы.
   - [3.2.](./03-fields-output/3.2-non-null-output.md) Делайте поля обязательными `NonNull`, если данные в поле возвращаются при любой ситуации.
   - [3.3.](./03-fields-output/3.3-grouping.md) Достигайте максимальной группировки взаимосвязанных полей.
-- **4. Правила аргументов (Input)** 
+- **4. Argument rules (Input)** 
   - [4.1.](./04-fields-input/4.1-grouping-input.md) Группируйте взаимосвязанные аргументы вместе в новый input-тип.
   - [4.2.](./04-fields-input/4.2-custom-scalar-for-input.md) Используйте строгие скалярные типы для аргументов, например `DateTime` вместо `String`.
   - [4.3.](./04-fields-input/4.3-non-null-input.md) Помечайте аргументы как `NonNull`, если они обязательны для выполнения запроса.
