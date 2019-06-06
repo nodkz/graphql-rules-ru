@@ -1,11 +1,11 @@
-## 2. Правила типов
+## 2. Type rules
 
-GraphQL по спецификации содержит всего 5 скалярных типов – `String` (строка), `Int` (целое число), `Float` (число с точкой), `Boolean` (булевое значение), `ID` (строка с уникальным идентификатором). Все эти типы легко передаются через JSON и доступны на любом языке программирования.
+GraphQL specification has 5 scalar types - `String`, `Int`, `Float`, `Boolean`, `ID` (string with unique identifier). All that types easily transmitted using JSON and available in every programming language.
 
-Но когда речь заходит о каком-то скалярном типе не входящего в синтаксис JSON, например `Date`. То тут уже необходимо бэкендеру самостоятельно определяться с форматом данных, чтоб их можно было сериализовать и передать клиенту через JSON. А также получить значение этого типа от клиента и обратно десериализовать его на сервере.
+But when it all comes to some scalar type that doesn't belong to JSON syntax, eg. `Date`. In that case, backend developer has to figure out data format on his own, so that format would be serializable and transmittable using JSON. Get the value of this type from a client and deserialize it back on the server.
 
-В таких случаях GraphQL позволяет создавать свои кастомные скалярные типы. О том как это делается [написано здесь](../types/README.md#custom-scalar-types).
+In such cases, GraphQL allows you to create your own custom scalar types. [This article](../types/README.md#custom-scalar-types) describes it.
 
-- **2. Правила типов** 
-  - [2.1.](./2.1-custom-scalars.md) Используйте кастомные скалярные типы, если вы хотите объявить поля или аргументы с определенным семантическим значением.
-  - [2.2.](./2.2-enumerable.md) Используйте Enum для полей, которые содержат определенный набор значений.
+- **2. Type rules** 
+  - [2.1.](./2.1-custom-scalars.md) Use custom scalar types if you want to declare fields or args with specific semantic value.
+  - [2.2.](./2.2-enumerable.md) Use Enum for fields which contain a specific set of values.
