@@ -1,6 +1,6 @@
 ## 5. Rules of lists
 
-I never saw an API that does not return a list of items. Or it's page by page or something built on cursors for infinite lists. Списки надо фильтровать, сортировать, ограничивать кол-во возвращаемых элементов. Сам GraphQL никак не ограничивает свободу реализации, но для того чтобы сформировать некое единообразие, необходимо завести стандарт.
+I never saw an API that does not return a list of items. Or it's page by page or something built on cursors for infinite lists. Lists should be filtered, sorted, and the number of returned items should be limited. GraphQL itself does not limit the freedom of implementation, but in order to form a certain uniformity, it is necessary to have a standard.
 
 - **5. Rules of lists** 
   - 5.1. To filter the lists, use the `filter` argument, which contains all the available filters.
