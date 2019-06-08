@@ -1,6 +1,6 @@
-## 7. Правила связей между типами (relationships)**
+## 7. 7. Rules of linkages between types (relationships)**
 
-Концептуальная разница GraphQL от REST API в том, что реализацию логики получения связанных ресурсов перенесли с клиента на сервер. Если с REST API фронтендеры гадают (без hypermedia) как запрашивать связанные ресурсы, пишут слой склейки/довытаскивания данных на клиенте. То с GraphQL этим делом занимаются те люди, которые прекрасно понимают свой data domain, и делают это на порядок быстрее и эффективнее. Тем более, когда связанные ресурсы дергаются в рамках сервера, не тратиться много времени на долгие раунд-трипы между клиентом и сервером для подзапросов. И вы не ограничены 4-мя браузерными подключениями на домен, внутри сервера отправляйте хоть 200 одновременных запросов, если хватает мощей.
+The conceptual difference between GraphQL and REST API is that the implementation of the logic of obtaining related resources was transferred from the client to the server. While with REST API clients are wondering (without hypermedia) how to request related resources, writing a layer of gluing/pre-dragging data on the client. With GraphQL, people who perfectly understand their data domain are engaged in that business, and they do that much faster and more efficiently. Especially when the related resources are fetched within the server, the client does not spend a lot of time on long round-trips between the client and the server for subqueries. И вы не ограничены 4-мя браузерными подключениями на домен, внутри сервера отправляйте хоть 200 одновременных запросов, если хватает мощей.
 
 - **7. Правила связей между типами (relationships)** 
   - [7.1.](./7.1-hairy-graphql.md) GraphQL-схема должна быть "волосатой"
