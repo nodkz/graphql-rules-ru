@@ -1,8 +1,8 @@
 ## 2. Type rules
 
-GraphQL specification has 5 scalar types - `String`, `Int`, `Float`, `Boolean`, `ID` (string with unique identifier). All that types easily transmitted using JSON and available in every programming language.
+GraphQL specification defines 5 built-in scalar types - `String`, `Int`, `Float`, `Boolean` and `ID` (a string with a unique identifier). These types are JSON serializable and available in every programming language.
 
-But when it all comes to some scalar type that doesn't belong to JSON syntax, eg. `Date`. In that case, backend developer has to figure out data format on his own, so that format would be serializable and transmittable using JSON. Get the value of this type from a client and deserialize it back on the server.
+However, when a scalar type is not representable in JSON by default (e.g. `Date`) the backend has to figure out a data format that can be serializable and transmittable via JSON. The backend also needs to deserialize the field received from a client.
 
 In such cases, GraphQL allows you to create your own custom scalar types. [This article](../types/README.md#custom-scalar-types) describes it.
 
